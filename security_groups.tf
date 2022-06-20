@@ -1,4 +1,3 @@
-
 resource "aws_security_group" "default" {
   name = "sgswarmcluster-cquiles"
 
@@ -20,7 +19,7 @@ resource "aws_security_group" "default" {
     # SSH Traffic
   ingress {
     description = "SSH"
-    from_port   = 0 
+    from_port   = 0
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
